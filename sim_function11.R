@@ -1,12 +1,5 @@
-library(MASS)
-suppressMessages(library(nlme))
-suppressMessages(library(lme4))
-suppressMessages(library(lmerTest))
-
-args <- commandArgs(trailingOnly=TRUE)
-
-b_tau  <- eval(parse(text=args[[1]]))
-b_sigma <- eval(parse(text=args[[2]]))
+my_packages <- c("MASS", "nlme", "lme4", "lmerTest")
+suppressMessages(lapply(my_packages, library, character.only = TRUE))
 
 b_sigma = 1
 b_tau_j = c(0, 1)
