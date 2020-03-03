@@ -17,7 +17,6 @@ calcSigma <- function(sigma,X1,X2) {
   return(Sigma)
 }
 
-setwd("/Users/ani/Desktop/Code")
 
 for(j in 1:2){
   
